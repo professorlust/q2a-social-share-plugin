@@ -9,6 +9,5 @@ if (!defined('QA_VERSION')) {
 // Register file to override the functions
 // present in the file
 */
-qa_register_plugin_overrides('qa-mailgun-integration.php');
 
-qa_register_plugin_module('module', 'qa-mailgun-admin_config.php', 'qa_mailgun_admin_config', 'Q2A MailGun Configuration');
+qa_register_plugin_module('module', 'qa-social-share-admin.php', 'qa_ss_admin', 'Q2A Social Share Configuration');

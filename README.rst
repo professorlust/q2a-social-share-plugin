@@ -5,7 +5,7 @@ Question2Answer, send email through MailGun API
 -----------
 Description
 -----------
-This is a plugin for **Question2Answer** that overrides existing send email functionality and helps  you send an email via MailGun API. 
+This plugin enables **Question2Answer** users to show popup message and encourage users to share their question and answer through social media. Edit
 
 ------------
 Installation
@@ -15,15 +15,15 @@ Installation
 #. Get the source code for this plugin from github_, either using git_, or downloading directly:
 
    - To download using git, install git and then type 
-     ``git clone https://github.com/PublicityPort/q2a-mailgun-integration.git``
+     ``git clone https://github.com/PublicityPort/q2a-social-share-plugin.git``
      at the command prompt (on Linux, Windows is a bit different)
    - To download directly, go to the `project page`_ and click **Download**
 
-#. Go to **Admin -> Plugins** on your q2a install and select the '**Q2A MailGun integration**' option, then check option '**Do you want to enable send email via MailGun API**', enter your '**MailGun API Key:**' and '**Your domain**', then '**Save Changes**'.
+#. Go to **Admin -> Plugins** on your q2a install and select the '**Q2A Social Share Configuration**' option.
 
 .. _Question2Answer: http://www.question2answer.org/install.php
 .. _git: http://git-scm.com/
-.. _project page: https://github.com/PublicityPort/q2a-mailgun-integration.git
+.. _project page: https://github.com/PublicityPort/q2a-social-share-plugin.git
 
 ----------
 Report an issue
