@@ -1,5 +1,5 @@
 ==============================
-Question2Answer, send email through MailGun API
+Question2Answer, share new question through AddThis.com social share inline tool.
 ==============================
 
 -----------
