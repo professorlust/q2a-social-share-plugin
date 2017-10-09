@@ -3,14 +3,11 @@ class qa_html_theme_layer extends qa_html_theme_base {
      function body_script(){
         qa_html_theme_base::body_script();
 
-        
-
-
         // only load if enabled
         if(qa_opt('ss_enabled')) {
             $this->output('<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid='.qa_opt('ss_addthis_profile_id').'"></script> ');
 
-            if($_GET['vadt'] == 'true'){
+            if($_GET['vadt'] == 'true' && (bool)qa_opt('ss_share_question')){
                 $this->output('
                 <style>
                 /* The Overlay (background) */
