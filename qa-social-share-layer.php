@@ -82,7 +82,7 @@ class qa_html_theme_layer extends qa_html_theme_base {
                 </div>
                 <script>
                 function closeNav() {
-                    document.getElementById("myNav").style.height = "0%";
+                    document.getElementById("myNav").style.display = "none";
                 }
                 </script>
 
