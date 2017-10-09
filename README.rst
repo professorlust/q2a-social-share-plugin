@@ -19,7 +19,7 @@ Installation
      at the command prompt (on Linux, Windows is a bit different)
    - To download directly, go to the `project page`_ and click **Download**
 
-#. Go to **Admin -> Plugins** on your q2a install and select the '**Q2A Social Share Configuration**' option.
+#. Go to **Admin -> Plugins** on your q2a install and select the '**Q2A Social Share Configuration**' option. Enable necessary options.
 
 .. _Question2Answer: http://www.question2answer.org/install.php
 .. _git: http://git-scm.com/
