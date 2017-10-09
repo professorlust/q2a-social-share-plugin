@@ -5,7 +5,7 @@ Question2Answer, send email through MailGun API
 -----------
 Description
 -----------
-This plugin enables **Question2Answer** users to show popup message and encourage users to share their question and answer through social media. Edit
+This plugin enables **Question2Answer** users to show popup message and encourage users to share their question through addThis.com's social sharing inline tool.
 
 ------------
 Installation
