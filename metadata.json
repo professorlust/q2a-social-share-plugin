@@ -1,6 +1,6 @@
 {
-	"name": "Q2A Social Share Plugin",
-	"description": "This plugin enables Question2Answer users to show popup message and encourage users to share their question and answer through social media.",
+	"name": "Q2A Social Share Plugin using AddThis",
+	"description": "This plugin enables Question2Answer users to show popup message and encourage users to share their question and answer through social media using AddThis.",
 	"uri": "https://github.com/PublicityPort/q2a-social-share-plugin",
 	"version": "1.0",
 	"date": "2017-09-23",

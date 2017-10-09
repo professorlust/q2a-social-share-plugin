@@ -2,16 +2,25 @@
 /*
 
 */
-class qa_ss_admin_config
+class qa_ss_admin
 {
   function admin_form(&$qa_content)
   {
     $saved=false;
 
     if (qa_clicked('ss_save_button')) {
-      qa_opt('ss_api_enabled', (bool) qa_post_text('ss_api_enabled_cb'));
-      qa_opt('ss_api_key', qa_post_text('ss_api_key_field'));
-      qa_opt('ss_api_domain', qa_post_text('ss_api_domain_field'));
+      qa_opt('ss_enabled', (bool) qa_post_text('ss_enabled_cb'));
+      
+      qa_opt('ss_share_question', (bool) qa_post_text('ss_share_question_cb'));
+      qa_opt('ss_share_question_message', qa_post_text('ss_share_question_message_field'));
+
+      qa_opt('ss_share_answer', (bool) qa_post_text('ss_share_answer_cb'));
+      qa_opt('ss_share_answer_message', qa_post_text('ss_share_answer_message_field'));
+
+      qa_opt('ss_addthis_profile_id', qa_post_text('ss_addthis_profile_id_field'));
+      
+      qa_opt('ss_is_q_post',false);
+      qa_opt('ss_is_a_post',false);
       $saved=true;
     }
 
@@ -20,20 +29,37 @@ class qa_ss_admin_config
 
       'fields' => array(
         array(
-          'label' => 'Do you want to enable send email via Social Share?',
+          'label' => 'Do you want to enable Social Share?',
           'type' => 'checkbox',
-          'value' => (bool)qa_opt('ss_api_enabled'),
-          'tags' => 'NAME="ss_api_enabled_cb"',
+          'value' => (bool)qa_opt('ss_enabled'),
+          'tags' => 'NAME="ss_enabled_cb"',
         ),
         array(
-          'label' => 'Social Share Key:',
-          'value' => qa_html(qa_opt('ss_api_key')),
-          'tags' => 'name="ss_api_key_field"',
+          'label' => 'Do you want to encourage users to share their question?',
+          'type' => 'checkbox',
+          'value' => (bool)qa_opt('ss_share_question'),
+          'tags' => 'NAME="ss_share_question_cb"',
         ),
         array(
-          'label' => 'Your domain',
-          'value' => qa_html(qa_opt('ss_api_domain')),
-          'tags' => 'name="ss_api_domain_field"',
+          'label' => 'Message to display when a new question is posted.',
+          'value' => qa_html(qa_opt('ss_share_question_message')),
+          'tags' => 'name="ss_share_question_message_field"',
+        ),
+        array(
+          'label' => 'Do you want to encourage users to share their answer?',
+          'type' => 'checkbox',
+          'value' => (bool)qa_opt('ss_share_answer'),
+          'tags' => 'NAME="ss_share_answer_cb"',
+        ),
+        array(
+          'label' => 'Message to display when a new answer is posted.',
+          'value' => qa_html(qa_opt('ss_share_answer_message')),
+          'tags' => 'name="ss_share_answer_message_field"',
+        ),
+        array(
+          'label' => 'Enter your AddThis profile ID.',
+          'value' => qa_html(qa_opt('ss_addthis_profile_id')),
+          'tags' => 'name="ss_addthis_profile_id_field"',
         ),
       ),
 
