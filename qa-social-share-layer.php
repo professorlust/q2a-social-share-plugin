@@ -55,13 +55,13 @@ class qa_html_theme_layer extends qa_html_theme_base {
                 /* Position the close button (top right corner) */
                 .overlay .closebtn {
                     position: absolute;
-                    top: 20px;
-                    right: 45px;
-                    font-size: 60px;
+                    top: -2px;
+                    right: 3px;
+                    font-size: 32px;
                 }
                 
                 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don\'t overlap */
-                @media screen and (max-height: 450px) {
+                @media screen and (/*max-height: 450px*/) {
                     .overlay a {font-size: 20px}
                     .overlay .closebtn {
                         font-size: 40px;
